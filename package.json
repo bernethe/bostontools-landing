@@ -1,0 +1,22 @@
+{
+  "name": "bostontools",
+  "version": "1.0.0",
+  "description": "LandingPage Boston Tools",
+  "main": "index.js",
+  "scripts": {
+    "babel-watch": "babel --watch src --out-file bostontools.js --source-maps",
+    "babel-build": "babel src --out-file bostontools.js && minify bostontools.js --out-file bostontools.js --mangle.keepClassName"
+  },
+  "author": "Harold Soto <bernethe@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-minify": "^0.5.1"
+  }
+}
