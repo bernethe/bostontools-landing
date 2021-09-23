@@ -278,18 +278,35 @@ footer {
 
 			& a {
 				@include xlink {
+					display: block;
+					padding: .2em;
+					background-color: #fff;
+					border-radius: 2px;
+
 					& svg {
-						fill: $oro;
+						fill: $papaya;
 						width: 24px;
 						height: 24px;
 					}
 				}
 
-				&:hover {
-					& svg {
-						fill: #fff;
+				&.ftico-fb {
+					@include xlink {
+						background-color: #4267B2;
+						& svg {
+							fill: #fff;
+						}
 					}
 				}
+				&.ftico-wa {
+					@include xlink {
+						background-color: #25D366;
+						& svg {
+							fill: #fff;
+						}
+					}
+				}
+
 			}
 		}
 	}
@@ -513,4 +530,18 @@ figure.serv-ico {
 @keyframes rotationSP {
 	from { transform: rotate(0deg); }
 	to { transform: rotate(359deg); }
+}
+a.btn {
+	@include xlink {
+		border: none;
+		background-color: $neutro;
+		color: #fff;
+		font-size: 1.15em;
+		padding: .5em 1em;
+		text-decoration: none;
+	}
+
+	&:hover {
+		background-color: darken($neutro, 10%);
+	}
 }
