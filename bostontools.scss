@@ -77,9 +77,7 @@ figure figcaption {
 }
 header {
 	text-align: center;
-	& svg {
-		fill: $papaya;
-	}
+	padding: 1em 4em;
 	@include media-breakpoint-up(sm) {
 		display: none;
 	}
@@ -539,6 +537,7 @@ a.btn {
 		font-size: 1.15em;
 		padding: .5em 1em;
 		text-decoration: none;
+		display: inline-block;
 	}
 
 	&:hover {
