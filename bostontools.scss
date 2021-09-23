@@ -347,11 +347,18 @@ figure.serv-ico {
 	}
 }
 #conversemos {
-	background-color: $oro;
-	// color: #fff;
+	background-color: $papaya;
+	color: #fff;
 
 	& h2 {
-		color: $neutro;
+		color: #fff;
+	}
+
+	& a {
+		@include xlink {
+			color: #fff;
+			text-decoration: underline;
+		}
 	}
 
 	& form {
