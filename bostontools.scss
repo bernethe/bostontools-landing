@@ -545,3 +545,23 @@ a.btn {
 		background-color: darken($neutro, 10%);
 	}
 }
+.wa-widget {
+	display: flex;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 3em;
+	height: 3em;
+	background-color: #25D366;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 2px 2px 5px 5px rgba(0,0,0,.15);
+
+	& svg {
+		fill: #fff;
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
